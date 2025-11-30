@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Disco勤怠｜Discordで使える勤怠管理ツール｜副業・スタートアップ向け</title>
+  <meta name="description" content="Disco勤怠はDiscordで打刻できる勤怠管理ツール。副業チーム・スタートアップ向けに、出勤・休憩・退勤の自動管理、入力漏れ検知、整合性チェックを提供。DiscordのBotだけで最速の勤怠運用を実現。">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header fade-up">
+    <div class="container header-inner">
+      <div class="logo">Disco勤怠</div>
+      <nav>
+        <a href="#problems">悩み</a>
+        <a href="#solution">解決</a>
+        <a href="#features">特長</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScghdZZ-1W5ho2dWJ6u_7YtBwHLjXruadAU-_DR9T5QUaM6eA/viewform?usp=dialog"
+          target="_blank"
+          class="nav-cta">
+          事前登録
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- COUNTDOWN BANNER -->
+  <div class="countdown-banner">
+    🎉 リリースまであと <span id="countdown"></span> 日
+  </div>
+
+  <!-- HERO -->
+  <section class="hero fade-up">
+    <div class="container hero-content">
+      <h1>Discordで勤怠管理をもっとカンタンに。</h1>
+
+      <p class="hero-sub">
+        副業チームも、スタートアップも。<br>
+        「Discordにいるついで」に勤怠が終わる。<br>
+        もうスプレッドシートも、月末の取りまとめ地獄もいらない。<br>
+        <b>※ 12月末リリース予定</b>
+      </p>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScghdZZ-1W5ho2dWJ6u_7YtBwHLjXruadAU-_DR9T5QUaM6eA/viewform?usp=dialog"
+        target="_blank"
+        class="cta-button">
+        事前登録する<br/>（リリース時にお知らせ）
+      </a>
+    </div>
+
+    <div class="hero-images">
+      <img src="public/images/iphone.png" class="hero-img zoom-in" alt="Discord勤怠Botの打刻UI" />
+      <img src="public/images/web.png" class="hero-img-wide zoom-in" alt="勤怠管理ダッシュボードWeb画面" />
+    </div>
+  </section>
+
+  <!-- PROBLEMS -->
+  <section id="problems" class="problems fade-up section-bg-1">
+    <div class="container">
+      <h2>勤怠管理で、こんな悩みありませんか？</h2>
+      <p class="section-lead">小さなチームだからこそ起きる、特有の問題があります。</p>
+
+      <div class="problems-grid">
+        <div class="problem-block">
+          <div class="problem-icon-shape"></div>
+          <div class="problem-text">
+            <h3>副業メンバーの勤怠がバラバラ</h3>
+            <p>月末になると勤怠を集めるだけで膨大な時間が消えていく。</p>
+          </div>
+        </div>
+
+        <div class="problem-block">
+          <div class="problem-icon-shape"></div>
+          <div class="problem-text">
+            <h3>入力漏れ・休憩忘れが多い</h3>
+            <p>整合性チェックに毎回時間がかかる。間違いも多い。</p>
+          </div>
+        </div>
+
+        <div class="problem-block">
+          <div class="problem-icon-shape"></div>
+          <div class="problem-text">
+            <h3>既存ツールが重い / 高い</h3>
+            <p>小規模チームにはオーバースペックで運用負荷も高い。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTION -->
+  <section id="solution" class="solution fade-up section-bg-3">
+    <div class="container">
+      <h2>Disco勤怠がDiscordでの勤怠管理を完全自動化します</h2>
+      <p class="section-lead">勤怠管理の面倒をすべて自動化。チームの時間を“本業”に戻します。</p>
+
+      <div class="value-steps">
+
+        <div class="value-step">
+          <div class="value-icon">⚡</div>
+          <div class="value-content">
+            <h3>Discordで打刻が完結</h3>
+            <p>「/開始します」を送るだけで出勤完了。アプリ切替ゼロで、最速の打刻体験。</p>
+          </div>
+        </div>
+
+        <div class="value-step reverse">
+          <div class="value-icon">🤖</div>
+          <div class="value-content">
+            <h3>入力漏れ・不正時刻をBotが自動検知</h3>
+            <p>退勤漏れ、休憩の重複などをBotが即座に通知。人的ミスをゼロへ。</p>
+          </div>
+        </div>
+
+        <div class="value-step">
+          <div class="value-icon">📊</div>
+          <div class="value-content">
+            <h3>稼働データを自動集計</h3>
+            <p>打刻データはバックエンドで整理され、管理画面でリアルタイムに閲覧可能。</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FLOW -->
+  <section id="flow" class="flow fade-up section-bg-1">
+    <div class="container">
+      <h2>導入手順</h2>
+      <p class="flow-lead">たった数分でセットアップ完了。すぐに使い始められます。</p>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>① BotをDiscordサーバーに追加</h3>
+            <p>リンクを踏むだけで追加できます。特別な設定は不要。</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>② 管理画面でメンバーを登録</h3>
+            <p>チームメンバーを追加して準備完了。</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>③ スラッシュコマンドで打刻</h3>
+            <p>/開始します /休憩開始 /退勤します など自由に。</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>④ 自動集計 → ダッシュボードで確認</h3>
+            <p>入力された勤怠は自動整形され、管理画面で閲覧できます。</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="features fade-up section-bg-4">
+    <div class="container">
+      <h2>Discord勤怠ツール『Disco勤怠』の主な特長</h2>
+
+      <div class="features-grid">
+        <div class="feature-block">
+          <div class="feature-icon">⏱</div>
+          <h3>出勤 / 休憩 / 退勤をBotで受付</h3>
+          <p>Discordで完結。アプリ切替ゼロ。</p>
+        </div>
+
+        <div class="feature-block">
+          <div class="feature-icon">⚠️</div>
+          <h3>入力漏れアラート</h3>
+          <p>退勤漏れ / 休憩終了忘れを自動で検知。</p>
+        </div>
+
+        <div class="feature-block">
+          <div class="feature-icon">🔍</div>
+          <h3>整合性チェック</h3>
+          <p>重複・不正時刻などをBotがチェック。</p>
+        </div>
+
+        <div class="feature-block">
+          <div class="feature-icon">📊</div>
+          <h3>メンバー勤怠を一覧表示</h3>
+          <p>ダッシュボードで稼働状況を即確認。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="pricing fade-up section-bg-3">
+    <div class="container">
+      <h2>料金プラン（リリース時に公開）</h2>
+      <p class="section-lead">
+        すべてのプランで利用できる機能は同じ。<br>
+        違いは、登録できるメンバー数だけです。
+      </p>
+
+      <div class="pricing-grid">
+
+        <!-- Free -->
+        <div class="price-card">
+          <div class="price-ribbon free">FREE</div>
+
+          <div class="price-content">
+            <h3 class="price-name">無料プラン</h3>
+            <p class="price-desc">手軽に始めたい小規模チーム向け</p>
+
+            <div class="price-main">¥0<span>/ 月</span></div>
+            <p class="price-capacity">2人まで利用可能</p>
+
+            <ul class="price-list">
+              <li>Discordで出勤・休憩・退勤</li>
+              <li>入力漏れアラート</li>
+              <li>整合性チェック</li>
+              <li>管理画面で稼働一覧表示</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Basic -->
+        <div class="price-card highlight">
+          <div class="price-ribbon basic">BASIC</div>
+
+          <div class="price-content">
+            <h3 class="price-name">Basicプラン</h3>
+            <p class="price-desc">拡大する副業チームに最適</p>
+
+            <div class="price-main price-pending">Coming Soon</div>
+            <p class="price-capacity">10人まで利用可能</p>
+
+            <ul class="price-list">
+              <li>FREEのすべての機能</li>
+              <li>チーム運用の標準構成</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Team -->
+        <div class="price-card">
+          <div class="price-ribbon team">TEAM</div>
+
+          <div class="price-content">
+            <h3 class="price-name">Teamプラン</h3>
+            <p class="price-desc">本格運用・小規模スタートアップ向け</p>
+
+            <div class="price-main price-pending">Coming Soon</div>
+            <p class="price-capacity">30人まで利用可能</p>
+
+            <ul class="price-list">
+              <li>BASICのすべての機能</li>
+              <li>スケールするチームに最適</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="comparison" class="comparison fade-up section-bg-2">
+    <div class="container">
+      <h2>他の勤怠サービスと比べて、どこが違う？</h2>
+      <p class="section-lead">小規模チーム・副業ワーカー向けに最適化された、唯一のDiscord特化型勤怠です。</p>
+
+      <div class="comparison-table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Disco勤怠</th>
+              <th>A社</th>
+              <th>B社</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Discordで打刻</td>
+              <td class="yes">◎ 対応</td>
+              <td class="no">× 非対応</td>
+              <td class="no">× 非対応</td>
+            </tr>
+            <tr>
+              <td>副業・小規模向け最適化</td>
+              <td class="yes">◎ 専用設計</td>
+              <td class="no">△ 機能が重い</td>
+              <td class="no">△ オーバースペック</td>
+            </tr>
+            <tr>
+              <td>入力漏れ / 整合性チェック</td>
+              <td class="yes">◎ Botで自動検知</td>
+              <td>△ 一部手動</td>
+              <td>△ 一部手動</td>
+            </tr>
+            <tr>
+              <td>費用感</td>
+              <td class="yes">◎ 必要最小限の機能で低コスト</td>
+              <td>× 月額300〜400円/人</td>
+              <td>× 月額300〜500円/人</td>
+            </tr>
+            <tr>
+              <td>導入の手間</td>
+              <td class="yes">◎ 数分で完了</td>
+              <td>× 初期設定が重い</td>
+              <td>× 管理者権限が必要</td>
+            </tr>
+            <tr>
+              <td>打刻のしやすさ</td>
+              <td class="yes">◎ Discordのまま操作</td>
+              <td>× アプリ切り替え必須</td>
+              <td>× Web or 専用アプリ</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="faq" class="faq fade-up section-bg-1">
+    <div class="container">
+      <h2>よくある質問</h2>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <h3>Q. DiscordのBotだけで本当に打刻できますか？</h3>
+          <p>はい。出勤・休憩・退勤はすべて「/開始します」「/休憩開始」などのスラッシュコマンドで完結します。</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Q. 入力漏れや二重打刻は防げますか？</h3>
+          <p>可能です。退勤し忘れ・休憩終了忘れ・矛盾する時刻はBotが自動で検知し、ユーザーに通知します。</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Q. 無料プランはどこまで使えますか？</h3>
+          <p>無料プランは2名まで、すべての主要機能をご利用いただけます。副業チームのテスト導入に最適です。</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Q. 既存の勤怠ソフトより何が便利ですか？</h3>
+          <p>アプリ切り替えが不要で、Discordを使っている流れのまま自然に打刻できる点です。導入の手間もほぼゼロです。</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Q. スタートアップや副業メンバーでも使えますか？</h3>
+          <p>はい。むしろその用途に最適化されています。機能がシンプルで、小人数でも運用コストが非常に低いです。</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- REQUEST -->
+  <section id="request" class="request fade-up section-bg-3">
+    <div class="container">
+      <h2>事前登録（12月末リリース予定）</h2>
+      <p>リリース時にメールでお知らせします。</p>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScghdZZ-1W5ho2dWJ6u_7YtBwHLjXruadAU-_DR9T5QUaM6eA/viewform?usp=dialog"
+        target="_blank"
+        class="cta-button">
+        事前登録する（無料）
+      </a>
+
+      <div class="mt-40"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Disco勤怠</p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    /* Fade animation */
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add("visible");
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll(".fade-up, .zoom-in").forEach(el => observer.observe(el));
+
+    /* Countdown */
+    const releaseDate = new Date("2025-12-31T00:00:00+09:00");
+    function updateCountdown() {
+      const now = new Date();
+      const diff = releaseDate - now;
+      const days = Math.max(0, Math.ceil(diff / (1000 * 60 * 60 * 24)));
+      document.getElementById("countdown").textContent = days;
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 60 * 1000);
+  </script>
+
+  <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+      "@type": "Question",
+      "name": "DiscordのBotだけで本当に打刻できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "出勤・休憩・退勤はすべてスラッシュコマンドで完結します。アプリ切替は不要です。"
+      }
+      },
+      {
+      "@type": "Question",
+      "name": "入力漏れや二重打刻は防げますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "退勤し忘れ・休憩終了忘れ・矛盾する時刻はBotが自動検知し、ユーザーに通知します。"
+      }
+      }
+    ]
+    }
+  </script>
+
+</body>
+</html>
