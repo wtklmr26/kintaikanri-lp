@@ -705,3 +705,18 @@ footer {
   color: #4b5563;
   line-height: 1.8;
 }
+
+.footer-links {
+  margin-top: 12px;
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  font-size: 14px;
+}
+.footer-links a {
+  color: #4b5563;
+  text-decoration: none;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
